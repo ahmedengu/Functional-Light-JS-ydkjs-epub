@@ -27,7 +27,7 @@ find . -iname "*.md" -exec sed -i 's#<br>#<br />#g' {} \;
 # Close img tags
 find . -iname "*.md" -exec sed -i -r 's#(<img.*[^/])>#\1 />#' {} \;
 
-cd 2nd-edition
+cd 2nd-ed
 
 echo "Generating: $BOOK1..."
 cd get-started
@@ -74,7 +74,7 @@ cd ..
 
 # ==== NOTE: the 6 books below are from the 1st edition ====
 
-cd $ROOT_DIR/1st-edition
+cd $ROOT_DIR/1st-ed
 
 TITLE="You Don't Know JS"
 

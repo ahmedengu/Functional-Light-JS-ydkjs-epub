@@ -26,27 +26,26 @@ Then the generated epub files are in `output` folder:
 
 ![](res/epub.png)
 
-Note that the first two books (_Get Started_ and _Scope & Closures_) are from the latest 2nd edition, and the rest are from the 1st edition.
 
 ## Customization
 
 First, recursively clone this repo to your machine:
 
 ```sh
-git clone --recursive git@github.com:gongzhang/you-dont-know-js-epub.git
+git clone --recursive https://github.com/ahmedengu/Functional-Light-JS-ydkjs-epub.git
 ```
 
 Then you can:
 
 - Modify `epub.css` to customize the style.
 - Read `gen.sh` to understand how the generator works.
-- Fetch the latest book content using git submodule command under `1st-edition` and `2nd-edition` directory.
+- Fetch the latest book content using git submodule command under `Functional-Light-JS`, `1st-ed` and `2nd-ed` directory.
 
 Finally, rebuild the Docker image and generate your own version epubs:
 
 ```sh
-docker build -t ydkjs-epub .
-docker run --rm -it -v $PWD/output:/root/output ydkjs-epub
+docker build -t fl-ydkjs-epub .
+docker run --rm -it -v $PWD/output:/root/output fl-ydkjs-epub
 ```
 
 additional Note (to get latest content)
