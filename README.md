@@ -16,10 +16,10 @@ Run with Docker:
 
 ```sh
 # force update to the latest image
-docker pull ahmedengu/fl-ydkjs-epub
+docker pull ahmedengu/fljs-ydkjs-epub
 
 # generate epub into output folder
-docker run --rm -it -v $PWD/output:/root/output ahmedengu/fl-ydkjs-epub
+docker run --rm -it -v $PWD/output:/root/output ahmedengu/fljs-ydkjs-epub
 ```
 
 Then the generated epub files are in `output` folder:
@@ -44,8 +44,8 @@ Then you can:
 Finally, rebuild the Docker image and generate your own version epubs:
 
 ```sh
-docker build -t fl-ydkjs-epub .
-docker run --rm -it -v $PWD/output:/root/output fl-ydkjs-epub
+docker build -t fljs-ydkjs-epub .
+docker run --rm -it -v $PWD/output:/root/output fljs-ydkjs-epub
 ```
 
 additional Note (to get latest content)
