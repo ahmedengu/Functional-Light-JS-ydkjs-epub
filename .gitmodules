@@ -1,0 +1,12 @@
+[submodule "Functional-Light-JS"]
+	path = Functional-Light-JS
+	url = https://github.com/getify/Functional-Light-JS
+	branch = master
+[submodule "2nd-ed"]
+	path = 2nd-ed
+	url = https://github.com/getify/You-Dont-Know-JS
+	branch = 2nd-ed
+[submodule "1st-ed"]
+	path = 1st-ed
+	url = https://github.com/getify/You-Dont-Know-JS
+	branch = 1st-ed
