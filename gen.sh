@@ -72,16 +72,56 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK2.epub" \
 cd ..
 
 
-# ==== NOTE: the 4 books below are from the 1st edition ====
+# ==== NOTE: the 6 books below are from the 1st edition ====
 
 cd $ROOT_DIR/1st-edition
 
 TITLE="You Don't Know JS"
 
+BOOK1="Up & Going"
+BOOK2="Scope & Closures"
 BOOK3="this & Object Prototypes"
 BOOK4="Types & Grammar"
 BOOK5="Async & Performance"
 BOOK6="ES6 & Beyond"
+
+echo "Generating: $BOOK1..."
+cd "up & going"
+pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK1.epub" \
+  --epub-cover-image=cover.jpg \
+  --epub-embed-font=$FONT_PATH \
+  --css=$ROOT_DIR/epub.css \
+  --no-highlight \
+  -M author="$AUTHOR" \
+  -M title="$TITLE: $BOOK1" \
+  foreword.md \
+  ../preface.md \
+  ch1.md \
+  ch2.md \
+  ch3.md \
+  apA.md
+cd ..
+
+echo "Generating: $BOOK2..."
+cd "scope & closures"
+pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK2.epub" \
+  --epub-cover-image=cover.jpg \
+  --epub-embed-font=$FONT_PATH \
+  --css=$ROOT_DIR/epub.css \
+  --no-highlight \
+  -M author="$AUTHOR" \
+  -M title="$TITLE: $BOOK2" \
+  ../preface.md \
+  ch1.md \
+  ch2.md \
+  ch3.md \
+  ch4.md \
+  ch5.md \
+  apA.md \
+  apB.md \
+  apC.md
+cd ..
+
 
 echo "Generating: $BOOK3..."
 cd "this & object prototypes"
@@ -143,7 +183,8 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK5.epub" \
   ch6.md \
   apA.md \
   apB.md \
-  apC.md
+  apC.md \
+  apD.md
 cd ..
 
 echo "Generating: $BOOK6..."
@@ -166,6 +207,39 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK6.epub" \
   ch7.md \
   ch8.md \
   apA.md
+cd ..
+
+# ==== Functional-Light JavaScript ====
+
+cd $ROOT_DIR/Functional-Light-JS
+
+TITLE="Functional-Light JavaScript"
+
+echo "Generating: $TITLE..."
+cd "manuscript"
+pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE.epub" \
+  --epub-cover-image=images/marketing/front-cover-sd.png \
+  --epub-embed-font=$FONT_PATH \
+  --css=$ROOT_DIR/epub.css \
+  --no-highlight \
+  -M author="$AUTHOR" \
+  -M title="$TITLE" \
+  foreword.md \
+  preface.md \
+  ch1.md \
+  ch2.md \
+  ch3.md \
+  ch4.md \
+  ch5.md \
+  ch6.md \
+  ch7.md \
+  ch8.md \
+  ch9.md \
+  ch10.md \
+  ch11.md \
+  apA.md \
+  apB.md \
+  apC.md
 cd ..
 
 echo "Done."

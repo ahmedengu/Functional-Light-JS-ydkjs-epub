@@ -1,11 +1,14 @@
-# you-dont-know-js-epub
+# Functional-Light JS, You Don't Know JS and You Don't Know JS Yet ePub
 
-"You Don't Know JS Yet" (1st/2nd editions) ePub generator.
+Functional Light JS, You Don't Know JS and You Don't Know JS Yet ePub generator.
 
 - Original book series by Kyle Simpson:
-  [2nd Edition](https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed) (in progress) and [1st Edition](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md).
+  [You Don't Know JS Yet 2nd Edition](https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed) (in progress), [You Don't Know JS 1st Edition](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md) and [Functional-Light JS](https://github.com/getify/Functional-Light-JS).
 - Inspired by gist:
   [bmaupin/6e3649af73120fac2b6907169632be2c](https://gist.github.com/bmaupin/6e3649af73120fac2b6907169632be2c)
+- Forked from:
+    [gongzhang/you-dont-know-js-epub](https://github.com/gongzhang/you-dont-know-js-epub)
+
 
 ## Generate the ePub
 

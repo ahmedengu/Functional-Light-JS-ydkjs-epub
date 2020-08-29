@@ -4,3 +4,6 @@
 [submodule "You-Dont-Know-JS"]
 	path = 1st-edition
 	url = git@github.com:getify/You-Dont-Know-JS.git
+[submodule "Functional-Light-JS"]
+	path = Functional-Light-JS
+	url = git@github.com:getify/Functional-Light-JS.git
