@@ -183,8 +183,7 @@ pandoc -f markdown+smart -o "$ROOT_DIR/output/$TITLE - $BOOK5.epub" \
   ch6.md \
   apA.md \
   apB.md \
-  apC.md \
-  apD.md
+  apC.md
 cd ..
 
 echo "Generating: $BOOK6..."
