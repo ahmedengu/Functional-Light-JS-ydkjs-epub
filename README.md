@@ -16,10 +16,10 @@ Run with Docker:
 
 ```sh
 # force update to the latest image
-docker pull gongzhang/ydkjs-epub
+docker pull ahmedengu/fl-ydkjs-epub
 
 # generate epub into output folder
-docker run --rm -it -v $PWD/output:/root/output gongzhang/ydkjs-epub
+docker run --rm -it -v $PWD/output:/root/output ahmedengu/fl-ydkjs-epub
 ```
 
 Then the generated epub files are in `output` folder:
