@@ -6,7 +6,7 @@ WORKDIR /root
 COPY . .
 
 RUN chmod +x gen.sh
-RUN git submodule update --init --recursive
+RUN git pull --recurse-submodules
 
 EXPOSE 80
 ENTRYPOINT []
