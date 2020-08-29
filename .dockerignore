@@ -1,10 +1,6 @@
-.git
 .gitignore
 .dockerignore
 Dockerfile
 LICENSE
 README.md
 res
-1st-ed/.git
-2nd-ed/.git
-Functional-Light-JS/.git
